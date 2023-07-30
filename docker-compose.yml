@@ -3,7 +3,7 @@ version: '3.9'
 services:
   bot:
     build: .
-    command: python /code/new.py
+    command: python /code/main.py
     volumes:
       - .:/code
     environment:
