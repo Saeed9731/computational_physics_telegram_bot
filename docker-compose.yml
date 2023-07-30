@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  bot:
+    build: .
+    command: python /code/new.py
+    volumes:
+      - .:/code
+    environment:
+      - "BOT_API_TOKEN=${DOCKER_COMPOSE_API_TOKEN}"
